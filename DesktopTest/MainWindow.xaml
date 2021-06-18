@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:DesktopTest"
         xmlns:sys="clr-namespace:System;assembly=mscorlib"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Основное окно" Height="450" Width="800">
     <Window.Resources>
         <ObjectDataProvider x:Key="EnumDataSource"
                             ObjectType="{x:Type sys:Enum}"
