@@ -24,27 +24,27 @@ namespace DesktopTest
             get { return id;}
             set { id = value; OnPropertyChanged(nameof(Id)); }
         }
-        private int? number;
+        private int? number = null;
         public int? Number
         {
             get { return number; }
             set { number = value; OnPropertyChanged(nameof(Number)); }
         }
-        private string counterpartyname;
+        private string counterpartyname = null;
         public string Сounterpartyname
         {
             get { return counterpartyname; }
             set { counterpartyname = value; OnPropertyChanged(nameof(Сounterpartyname)); }
         }
 
-        private DateTime? orderdate;
+        private DateTime? orderdate = null;
         public DateTime? Orderdate
         {
             get { return orderdate; }
             set { orderdate = value; OnPropertyChanged(nameof(Orderdate)); }
         }
 
-        private Guid? creator;
+        private Guid? creator = null;
         public Guid? Creator
         {
             get { return creator; }

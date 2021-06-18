@@ -29,13 +29,13 @@ namespace DesktopTest
             get { return id; }
             set { id = value; OnPropertyChanged(nameof(Id)); }
         }
-        private string name;
+        private string name = null;
         public string Name
         {
             get { return name; }
             set { name = value; OnPropertyChanged(nameof(Name)); }
         }
-        private Guid? leader;
+        private Guid? leader = null;
         public Guid? Leader
         {
             get { return leader; }

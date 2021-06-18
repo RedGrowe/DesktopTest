@@ -190,21 +190,16 @@ namespace DesktopTest
                         {
                             var emp = db.Employees.Where(x => x.Id == SelectedEmployee.Id).FirstOrDefault();
 
-                            if (SelectedEmployee.Lastname == null) { emp.Lastname = null; }
-                            else { emp.Lastname = SelectedEmployee.Lastname; }
+                            emp.Lastname = SelectedEmployee.Lastname;
 
-                            if (SelectedEmployee.Firstname == null) { emp.Firstname = null; }
-                            else { emp.Firstname = SelectedEmployee.Firstname; }
+                            emp.Firstname = SelectedEmployee.Firstname;
 
-                            if (SelectedEmployee.Middlename == null) { emp.Middlename = null; }
-                            else { emp.Middlename = SelectedEmployee.Middlename; }
+                            emp.Middlename = SelectedEmployee.Middlename;
 
-                            if (SelectedEmployee.Birthdate == null) { emp.Birthdate = null; }
-                            else { emp.Birthdate = SelectedEmployee.Birthdate; }
+                            emp.Birthdate = SelectedEmployee.Birthdate;
 
                             if (SelectedEmployee.Subunit == null) { emp.Subunit = null; }
                             else { emp.Subunit = SelectedEmployee.SelectedSubUnit.Id; }
-
 
                             emp.Gender = SelectedEmployee.Gender;
                             db.SaveChanges();
@@ -280,8 +275,7 @@ namespace DesktopTest
                         {
                             var sb = db.Subunits.Where(x => x.Id == SelectedSubunit.Id).FirstOrDefault();
 
-                            if (SelectedSubunit.Name == null) { sb.Name = null; }
-                            else { sb.Name = SelectedSubunit.Name; }
+                            sb.Name = SelectedSubunit.Name;
 
                             if (SelectedSubunit.Leader == null) { sb.Leader = null; }
                             else { sb.Leader = SelectedSubunit.SelectedEmployee.Id; }
@@ -354,14 +348,11 @@ namespace DesktopTest
                         {
                             var or = db.Orders.Where(x => x.Id == SelectedOrder.Id).FirstOrDefault();
 
-                            if (SelectedOrder.Number == null) { or.Number = null; }
-                            else { or.Number = SelectedOrder.Number; }
+                            or.Number = SelectedOrder.Number;
 
-                            if (SelectedOrder.Сounterpartyname == null) { or.Сounterpartyname = null; }
-                            else { or.Сounterpartyname = SelectedOrder.Сounterpartyname; }
+                            or.Сounterpartyname = SelectedOrder.Сounterpartyname;
 
-                            if (SelectedOrder.Orderdate == null) { or.Orderdate = null; }
-                            else { or.Orderdate = SelectedOrder.Orderdate; }
+                            or.Orderdate = SelectedOrder.Orderdate;
 
                             if (SelectedOrder.Creator == null) { or.Creator = null; }
                             else { or.Creator = SelectedOrder.SelectedEmployee.Id; }
